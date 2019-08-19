@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ImageCard 5</title>
+<style type="text/css">
+*{box-sizing:border-box;}
+.imagecard {
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  height:300px;
+  min-width:450px;
+  max-width:500px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.imageboxcircle {
+  height:50%;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  top:10px;
+}
+
+.imageboxcircle img{
+  background-color: #f8bbd0;
+  border:12px solid white;
+  border-bottom-color:#64b5f6;
+  border-right-color:#64b5f6;
+  display: block;
+  margin: auto;
+  height:100%;
+  border-radius:50%;
+  max-width:300px;
+}
+
+.imagebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border:12px solid white;
+  border-bottom-color:#64f66c;
+  border-right-color:#64f66c;
+  border-radius:50%;
+  height: 100%;
+  transform:translate(-50%,-50%);
+  overflow: hidden;
+}
+.card-contents{
+  text-align:center;
+}
+</style>
+</head>
+<body>
+  <div class="imagecard">
+  <div class="imageboxcircle">
+    <div class="imagebox">
+      <img src="image.png" alt="pic">
+    </div>
+  </div>
+  <div class="card-contents"><h1>Image Card</h1><p>Your Content</p></div>
+  </div>
+</body>
+</html>
